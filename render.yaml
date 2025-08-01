@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: nasci15k-lotery-api
+    env: docker
+    plan: free
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: "false"
+      - key: SITE_NAME
+        value: "Nasci15k Lotery"
+      - key: COINPAYMENTS_API_KEY
+        value: "SUA_CHAVE_AQUI"
